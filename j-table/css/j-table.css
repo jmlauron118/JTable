@@ -1,0 +1,117 @@
+﻿.jtable {
+    padding: 20px 0;
+}
+
+    .jtable > kbd {
+        width: 100% !important;
+        display: block;
+        text-align: center;
+    }
+
+.jmain-container {
+    border-left: solid 1px #007bff;
+    border-right: solid 1px #007bff;
+    border-top: solid 1px #007bff;
+}
+
+.jrow-content > .jsub-row, .jrow-content-m > .jsub-row {
+    border-bottom: 1px solid rgb(0, 123, 255);
+}
+
+.jheader-container {
+    display: flex;
+}
+
+    .jheader-container > .j-header {
+        background-color: #007bff;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
+        padding: 5px 2px;
+    }
+
+        .jheader-container > .j-header > label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+.jrow-container {
+    display: flex;
+    border-bottom: solid 1px #007bff;
+    width: 100%;
+}
+
+    .jrow-container > .j-row {
+        font-size: 14px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+        .jrow-container > .j-row > label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            cursor: pointer;
+        }
+
+    .jrow-container:hover {
+        background-color: #bdbdbd;
+        cursor: pointer;
+    }
+
+.jno-data {
+    padding-top: 8px;
+}
+
+    .jno-data > label, .jno-data-m > label {
+        width: 100%;
+        text-align: center;
+    }
+
+.jno-data-m {
+    padding-top: 8px;
+    border-top: solid 1px #007bff;
+}
+
+/*Mobile*/
+.jmain-container-m {
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1px #007bff;
+    border-right: solid 1px #007bff;
+    border-top: solid 1px #007bff;
+}
+
+.jrow-container-m {
+    border-bottom: solid 1px #007bff;
+}
+
+    .jrow-container-m > .j-row-m {
+        display: flex;
+        width: 100%;
+    }
+
+        .jrow-container-m > .j-row-m > div {
+            border: 1px solid #e9ecef;
+            width: 50%;
+            padding: 0.8em;
+        }
+
+.j-search-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#j-search {
+    margin-bottom: 5px;
+    height: 40px;
+}
