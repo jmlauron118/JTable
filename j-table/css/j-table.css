@@ -1,5 +1,10 @@
-﻿.jtable {
+﻿*{
+    font-family: Roboto;
+}
+
+.jtable {
     padding: 20px 0;
+    height: inherit;
 }
 
     .jtable > kbd {
@@ -9,9 +14,11 @@
     }
 
 .jmain-container {
-    border-left: solid 1px #007bff;
-    border-right: solid 1px #007bff;
-    border-top: solid 1px #007bff;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-top: solid 1px;
+    border-color: #007bff;
+    height: inherit;
 }
 
 .jrow-content > .jsub-row, .jrow-content-m > .jsub-row {
@@ -31,6 +38,7 @@
         word-wrap: break-word;
         white-space: normal;
         padding: 5px 2px;
+        font-weight: bolder;
     }
 
         .jheader-container > .j-header > label {
@@ -40,13 +48,14 @@
             height: 100%;
         }
 
-.jrow-container {
+
+.jrow-content {
     display: flex;
     border-bottom: solid 1px #007bff;
     width: 100%;
 }
 
-    .jrow-container > .j-row {
+    .jrow-content > .j-row {
         font-size: 14px;
         text-align: center;
         word-wrap: break-word;
@@ -55,7 +64,7 @@
         cursor: pointer;
     }
 
-        .jrow-container > .j-row > label {
+        .jrow-content > .j-row > label {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -63,16 +72,18 @@
             cursor: pointer;
         }
 
-    .jrow-container:hover {
+    .jrow-content:hover {
         background-color: #bdbdbd;
         cursor: pointer;
     }
 
-.jno-data {
-    padding-top: 8px;
+.jrow-container{
+    height: inherit;
+    overflow-y: auto;
 }
 
-    .jno-data > label, .jno-data-m > label {
+    .jrow-container > .jno-data {
+        padding-top: 8px;
         width: 100%;
         text-align: center;
     }
@@ -81,6 +92,10 @@
     padding-top: 8px;
     border-top: solid 1px #007bff;
 }
+    .jno-data-m > label {
+        width: 100%;
+        text-align: center;
+    }
 
 /*Mobile*/
 .jmain-container-m {
@@ -114,4 +129,27 @@
 #j-search {
     margin-bottom: 5px;
     height: 40px;
+    border-radius: 0.5em;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+body {
+    color: #4a4a4a;
+}
+
+label{
+    margin-bottom: .5rem;
+    touch-action: manipulation;
+}
+
+.bc-red{
+    border-color: #c52020 !important;
+}
+
+.bc-red-head{
+    background:  #c52020 !important;
 }
