@@ -14,10 +14,6 @@
     }
 
 .jmain-container {
-    border-left: solid 1px;
-    border-right: solid 1px;
-    border-top: solid 1px;
-    border-color: #007bff;
     height: inherit;
 }
 
@@ -52,6 +48,10 @@
 .jrow-content {
     display: flex;
     border-bottom: solid 1px #007bff;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    /* border-top: solid 1px; */
+    border-color: #007bff;
     width: 100%;
 }
 
@@ -80,6 +80,10 @@
 .jrow-container{
     height: inherit;
     overflow-y: auto;
+    /* border-left: solid 1px;
+    border-right: solid 1px;
+    border-top: solid 1px;
+    border-color: #007bff; */
 }
 
     .jrow-container > .jno-data {

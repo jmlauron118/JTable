@@ -1,5 +1,5 @@
 ﻿/*!
- *  JTable v1.0.1.1 - 2021-04-30
+ *  JTable v1.0.1.0 - 2021-01-13
  *  (c) 2021 Jan Mark Lauron
  */
 
@@ -134,7 +134,7 @@
     $.extend(JMTable.prototype, {
         init: function () {
             InitJTable(this);
-            this.initComplete();
+            this.initComplete == undefined || this.initComplete();
         },
         destroy: function () {
             this.unbindEvents();
